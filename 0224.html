@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>JS</title>
+ </head>
+ <body>
+
+
+<script>
+
+function changeBox(){
+
+
+  var box1_style = document.getElementById("box1");
+
+	 
+	  if (box1_style.style.display == "block") {
+
+			box1_style.style.display = 'none';
+
+		}else{
+
+		    box1_style.style.display = 'block';
+
+	  }
+
+
+	}
+
+
+</script>
+
+<style>
+	.box1{ width:400px;height:400px;background-color:yellow;display:block;}
+	.box2{ width:400px;height:400px;background-color:green;display:block }
+
+/*
+ 속성 자체가 사라지게함(영역을 차지하지 않음)
+ display:block or none
+
+ 보이지만 않게
+ visibility: visible;
+ visibility: hidden;
+
+
+hobby[0]
+hobby[1]
+hobby[2]
+hobby[3]
+hobby[4]
+*/
+</style>
+<input type="button" value="박스변경" onclick="changeBox()">
+<br><br>
+
+
+<div class="box1" id="box1" style="display:none;">
+
+</div>
+  
+<div class="box2" id="box2">
+
+</div>
+
+ </body>
+</html>
